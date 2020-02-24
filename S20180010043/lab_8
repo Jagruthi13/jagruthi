@@ -1,0 +1,284 @@
+import java.util.*;
+
+class Address
+{
+int pincode;
+String city;
+
+Address(int p,String c)
+{
+pincode=p;
+city=c;
+}
+
+// get and set pincode
+public int getpin()
+{
+return pincode;
+}
+public void setpin(int newP)
+{
+this.pincode=newP;
+}
+
+//get and set city
+public String getcity()
+{
+return city;
+}
+public void setcity(String c)
+{
+this.city=c;
+}
+
+}
+
+class Person
+{
+String name;
+Address addr;
+int aadhar_no;
+
+//constructor
+Person(String n,Address address,int a)
+{
+name=n;
+aadhar_no=a;
+addr=address;
+}
+
+//get and set name
+public String getname()
+{
+return name;
+}
+public void setname(String n)
+{
+this.name=n;
+}
+
+//get and set aadhar
+public int getaadhar()
+{
+return aadhar_no;
+}
+public void setaadhar(int n)
+{
+this.aadhar_no=n;
+}
+}
+
+class Software_Engg extends Person
+{
+int s_id;
+float s_salary;
+
+//constructor
+Software_Engg(int id,String name, float salary,int aadhar_no, Address addr)
+{
+super(name,addr,aadhar_no);
+this.s_id=id;
+this.s_salary=salary;
+}
+
+//get and set s_id
+public int gets_id()
+{
+return s_id;
+}
+public void sets_id(int n)
+{
+this.s_id=n;
+}
+
+//get and set s_salary
+public float gets_sal()
+{
+return s_salary;
+}
+public void sets_sal(float n)
+{
+this.s_salary=n;
+}
+}
+
+
+class Design_Engg extends Person
+{
+int d_id;
+float d_salary;
+
+//constructor
+Design_Engg(int id,String name, float salary,int aadhar_no, Address addr)
+{
+super(name,addr,aadhar_no);
+this.d_id=id;
+this.d_salary=salary;
+}
+
+//get and set s_id
+public int getd_id()
+{
+return d_id;
+}
+public void setd_id(int n)
+{
+this.d_id=n;
+}
+
+//get and set s_salary
+public float getd_sal()
+{
+return d_salary;
+}
+public void setd_sal(float n)
+{
+this.d_salary=n;
+}
+}
+
+class Manager extends Person
+{
+int m_id;
+float m_salary;
+
+//constructor
+Manager(int id,String name, float salary,int aadhar_no, Address addr)
+{
+super(name,addr,aadhar_no);
+this.m_id=id;
+this.m_salary=salary;
+}
+
+//get and set s_id
+public int getm_id()
+{
+return m_id;
+}
+public void setm_id(int n)
+{
+this.m_id=n;
+}
+
+//get and set s_salary
+public float getm_sal()
+{
+return m_salary;
+}
+public void setm_sal(float n)
+{
+this.m_salary=n;
+}
+}
+
+class CEO extends Person
+{
+int ceo_id;
+float ceo_salary;
+
+//constructor
+CEO(int id,String name, float salary,int aadhar_no, Address addr)
+{
+super(name,addr,aadhar_no);
+this.ceo_id=id;
+this.ceo_salary=salary;
+}
+
+//get and set s_id
+public int getceo_id()
+{
+return ceo_id;
+}
+public void setceo_id(int n)
+{
+this.ceo_id=n;
+}
+
+//get and set s_salary
+public float getceo_sal()
+{
+return ceo_salary;
+}
+public void setceo_sal(float n)
+{
+this.ceo_salary=n;
+}
+}
+
+class VP extends Person
+{
+int vp_id;
+float vp_salary;
+
+//constructor
+VP(int id,String name, float salary,int aadhar_no, Address addr)
+{
+super(name,addr,aadhar_no);
+this.vp_id=id;
+this.vp_salary=salary;
+}
+
+//get and set s_id
+public int getvp_id()
+{
+return vp_id;
+}
+public void setvp_id(int n)
+{
+this.vp_id=n;
+}
+
+//get and set s_salary
+public float getvp_sal()
+{
+return vp_salary;
+}
+public void setvp_sal(float n)
+{
+this.vp_salary=n;
+}
+}
+
+class organization
+{
+
+}
+
+class finance extends organization
+{
+
+}
+
+class SW_Engg extends organization
+{
+
+}
+
+class HW_Design extends organization
+{
+
+}
+
+class Fabr extends HW_Design
+{
+
+}
+
+class Design extends HW_Design
+{
+
+}
+
+class Finance extends organization
+{
+
+}
+
+
+public class lab_8
+{
+public static void main(String args[])
+{
+
+}
+}
